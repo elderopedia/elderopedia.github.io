@@ -10,4 +10,5 @@ $(document).ready(function () {
         indicators: true
     });
     $('.modal').modal();
+    $('.tabs').tabs();
 });

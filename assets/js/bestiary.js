@@ -1,45 +1,52 @@
 let beasts = {
     "array": [{
             "name": "Dragon",
-            "img": "assets/img/dovah.png",
+            "img": "assets/img/TESL_Blood_Dragon-rev2_art.jpg",
             "infos": "Lorem ipsum dolor sit amet consectetur blablablablablablablablablabla",
-            "alt": "un dragon utilisant la voix"
+            "alt": "un dragon utilisant la voix pour cracher du feu",
+            "file": "dragon",
         },
         {
             "name": "Dremora",
             "img": "assets/img/TESL-Dremora_Markynaz.jpg",
             "infos": "Lorem ipsum dolor sit amet consectetur blablablablablablablablablabla",
-            "alt": "Un groupe de Dremora"
+            "alt": "Un groupe de Dremora",
+            "file": "dremora"
         },
         {
             "name": "Dremora",
             "img": "assets/img/TESL-Dremora_Markynaz.jpg",
             "infos": "Lorem ipsum dolor sit amet consectetur blablablablablablablablablabla",
-            "alt": "Un groupe de Dremora"
+            "alt": "Un groupe de Dremora",
+            "file": "dremora"
         },
         {
             "name": "Dremora",
             "img": "assets/img/TESL-Dremora_Markynaz.jpg",
             "infos": "Lorem ipsum dolor sit amet consectetur blablablablablablablablablabla",
-            "alt": "Un groupe de Dremora"
+            "alt": "Un groupe de Dremora",
+            "file": "dremora"
         },
         {
             "name": "Dremora",
             "img": "assets/img/TESL-Dremora_Markynaz.jpg",
             "infos": "Lorem ipsum dolor sit amet consectetur blablablablablablablablablabla",
-            "alt": "Un groupe de Dremora"
+            "alt": "Un groupe de Dremora",
+            "file": "dremora"
         },
         {
             "name": "Dremora",
             "img": "assets/img/TESL-Dremora_Markynaz.jpg",
             "infos": "Lorem ipsum dolor sit amet consectetur blablablablablablablablablabla",
-            "alt": "Un groupe de Dremora"
+            "alt": "Un groupe de Dremora",
+            "file": "dremora"
         },
         {
             "name": "Dremora",
             "img": "assets/img/TESL-Dremora_Markynaz.jpg",
             "infos": "Lorem ipsum dolor sit amet consectetur blablablablablablablablablabla",
-            "alt": "Un groupe de Dremora"
+            "alt": "Un groupe de Dremora",
+            "file": "dremora"
         },
     ]
 }
@@ -47,16 +54,14 @@ let beasts = {
 function loadBestiary() {
     let beastiary = beasts.array
     for (let i = 0; i < beastiary.length; i++) {
-        $('.cards').append('<div class="card">' +
-            '<div class="card-image waves-effect waves-block waves-light">' +
-            '<img class="activator card-image" id="card-img" src = "' + beastiary[i].img + '" alt="' + beastiary[i].alt + '" >' +
+        $('.cards').append(
+            '<div class="card">' +
+            '<div class="card-image card-img">' +
+            '<img class="card-img" src="' + beastiary[i].img + '" alt="' + beastiary[i].alt + '"/> ' +
             '</div>' +
             '<div class="card-content">' +
-            '<span class = "card-title activator grey-text text-darken-4">' + beastiary[i].name + '</span>' +
-            '</div>' +
-            ' <div class="card-reveal">' +
-            '<span class = "card-title activator grey-text text-darken-4">' + beastiary[i].name + '<i class="material-icons right">close</i></span>' +
-            '<p>' + beastiary[i].infos + '</p>' +
+            '<span class="card-title grey-text text-darken-4">' + beastiary[i].name + '</span>' +
+            '<p><a href="' + beastiary[i].file + '.html ">En savoir plus</a></p>' +
             '</div>' +
             '</div>');
 

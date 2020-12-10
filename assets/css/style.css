@@ -34,7 +34,7 @@ h1 {
 }
 
 
-#card-img {
+.card-img {
     height: 300px;
     width: 300px;
 }
@@ -45,4 +45,19 @@ h1 {
 
 #slide-out>ul>li:nth-child(7)>a>i {
     color: black;
+}
+
+.era-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+body>div.wrapper.container>div:nth-child(1)>div>h1>a {
+    width: 300px;
+}
+
+.presentation {
+    background-color: lightgray;
+    padding: 10px;
 }
